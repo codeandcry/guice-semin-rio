@@ -11,7 +11,9 @@ public class Module extends AbstractModule{
     
     @Override
     protected void configure(){
-        bind(Sms.class).annotatedWith(Names.named("ChiaCorreio")).to(SmsChiaCorreio.class);
-        bind(Sms.class).annotatedWith(Names.named("OlaCorreio")).to(SmsOlaCorreio.class);
+        bind(Sms.class).annotatedWith(Names.named("ChiaCorreio"))
+                .to(SmsChiaCorreio.class);
+        bind(Sms.class).annotatedWith(Names.named("OlaCorreio"))
+                .to(SmsOlaCorreio.class);
     }
 }

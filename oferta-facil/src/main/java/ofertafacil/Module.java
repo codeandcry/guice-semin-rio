@@ -10,6 +10,6 @@ public class Module extends AbstractModule{
     
     @Override
     protected void configure(){
-        bind(Sms.class).to(SmsChiaCorreio.class);
+        bind(Sms.class).to(SmsOlaCorreio.class);
     }
 }

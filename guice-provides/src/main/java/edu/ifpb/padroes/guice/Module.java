@@ -7,6 +7,7 @@ package edu.ifpb.padroes.guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
+import com.google.inject.name.Named;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
